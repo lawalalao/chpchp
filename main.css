@@ -1,0 +1,123 @@
+html,body {
+
+    font-family: 'Source Sans Pro', "roboto";
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+* {
+    text-decoration: none !important;
+}
+.nav {
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 30px;
+    left: 30px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #857ff3;
+    ;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+    color:white;
+}
+.nav a {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+    color:white;
+}
+.landing {
+
+   background-color:#6c63ff;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10vw 0 10vw;
+   height: 100vh;
+   color: whitesmoke;
+}
+.landing h1 {
+    font-size: 3vw;
+    margin: 0 !important;
+
+}
+.landing h2 {
+    font-size: 2.5vw;
+    margin: 0 !important;
+    color:black;
+
+}
+.landing .typing {
+    margin-left: 10px;
+   
+}
+.landing .typing::after {
+    content: "";
+    
+    right: -5px;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid rgb(69, 27, 221);
+    animation: blink 0.5s infinite ease-in;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.page-footer{
+    background-color:#6c63ff;
+}
+
+#status  .success {
+    background-color: black;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+#status .error {
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events:all;
+
+    }
+     90% {
+         opacity: 1;
+         pointer-events: all;
+
+     }
+
+    100% {
+        opacity: 0;
+        pointer-events:all;
+    }
+}
